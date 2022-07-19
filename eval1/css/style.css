@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*balises*/
+h1, h2, h3, h5, h6 {
+  color: white;
+}
+
+.arrow-up {
+  width: 0px;
+  height: 0px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid black;
+  transform: rotate(270deg);
+}
+
+.arrow-up2 {
+  transform: rotate(90deg);
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+/*mixins*/
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: auto;
+}
+body header {
+  position: absolute;
+  z-index: 1000;
+  width: 100vw;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body header nav {
+  width: 50px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 5px;
+}
+body header nav img {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(179, 179, 179);
+}
+body header nav ul {
+  display: none;
+  margin-top: 10px;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  left: 0;
+}
+body header nav ul li {
+  width: 100vw;
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+}
+body header nav ul li:hover {
+  background-color: rgb(182, 182, 182);
+}
+body header nav .appear {
+  display: block;
+}
+body header nav:hover {
+  background-color: rgb(48, 48, 48);
+}
+body main .first-part {
+  width: 100vw;
+  height: 70vh;
+  background-image: url(../utils/eval_integration-master/background.jpg);
+  background-size: cover;
+  /*form*/
+}
+body main .first-part .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+}
+body main .first-part .title h1 {
+  letter-spacing: 5px;
+}
+body main .first-part form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.397);
+  margin: 40px auto;
+}
+body main .first-part form *:not(button) {
+  margin: 5px;
+  width: 98%;
+  padding: 5px 5px 5px 20px;
+}
+body main .first-part form select:hover, body main .first-part form input:hover {
+  background-color: rgb(199, 199, 199);
+}
+body main .first-part form input {
+  border: none;
+}
+body main .first-part form button {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(78, 152, 78);
+  border: none;
+  color: white;
+  margin: 5px 0 0 0;
+}
+body main .first-part form button:hover {
+  background-color: rgb(58, 112, 58);
+}
+body main .second-part {
+  width: 100vw;
+  height: auto;
+}
+body main .second-part .parameters {
+  font-weight: 900;
+  width: 100vw;
+  background-color: green;
+  padding: 0 20px 0 20px;
+}
+body main .second-part .parameters .result {
+  float: left;
+  font-size: 20px;
+}
+body main .second-part .parameters .filter {
+  float: right;
+  margin: 10px;
+}
+body main .second-part .carouselmain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+body main .second-part .carousel {
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: 200px;
+  max-width: 400px;
+}
+body main .second-part .carousel > ul > li > img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+body main .second-part .slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+body main .second-part .slide[data-active] {
+  opacity: 1;
+}
+body main .second-part .carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: none;
+  border-radius: 50%;
+}
+body main .second-part .carousel-button:hover {
+  background-color: rgb(204, 204, 204);
+}
+body main .second-part .prev {
+  left: -50px;
+}
+body main .second-part .next {
+  right: -50px;
+}
+body main .second-part .c1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body main .second-part .c1 .paid {
+  height: 30px;
+  width: 150px;
+  color: white;
+  background-color: rgb(48, 110, 48);
+  border: none;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+body main .second-part .c1 .paid:hover {
+  background-color: rgb(61, 136, 61);
+}
+body main .second-part .c1 article {
+  display: none;
+  width: 300px;
+}
+body main .second-part .coord {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .second-part .coord img {
+  max-height: 200px;
+}
+body main .second-part .coord ul {
+  margin: 10px;
+  padding: 20px;
+}
+
+/*tablette*/
+@media screen and (min-width: 900px) {
+  body main .first-part form {
+    width: 80%;
+  }
+  body main .first-part form .choices {
+    display: flex;
+  }
+}
+/*pc*/
+@media screen and (min-width: 1200px) {
+  body main .first-part form {
+    flex-direction: row;
+    height: 50px;
+  }
+  body main .first-part form button {
+    margin: 0;
+    width: 300px;
+  }
+  body main .second-part .c1 .section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  body main .second-part .c1 .section article {
+    display: block;
+    width: 500px;
+  }
+}/*# sourceMappingURL=style.css.map */
