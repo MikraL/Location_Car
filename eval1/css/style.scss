@@ -39,6 +39,7 @@ ul>li {
 }
 
 body {
+    width: 100%;
     height:auto;
     header {
         position: absolute;
@@ -49,9 +50,10 @@ body {
         justify-content: flex-end;
         align-items: center;
         nav {
+            margin: 10px;
             width: 50px;
             height: 40px;
-            margin: 20px;
+          
             border-radius: 5px;
             img {
                 width: 100%;
@@ -251,12 +253,19 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
                 img {
                     max-height: 200px;
                 }
-                ul {
+
                 
-                    padding: 20px;
+                ul {
+
+                height: auto;
+                li {
+                    font-size: 12px;
+                    padding: 10px;
+                }
                 }
               }
         }
@@ -275,6 +284,14 @@ body {
                     display: flex;
                    }
                    
+                }
+            }
+            .second-part {
+                ul {
+                    li{
+                        font-size: 15px !important;
+                        font-weight: 700;
+                    }
                 }
             }
         }
@@ -314,6 +331,15 @@ body {
 
                 }
                 }
+                ul {
+                    
+                       height: auto;
+                    li {
+       
+                        font-size: 20px !important;
+                  
+                    }
+                    }
             }
         }
     }
