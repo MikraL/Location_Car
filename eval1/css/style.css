@@ -30,6 +30,7 @@ ul > li {
 
 /*mixins*/
 body {
+  width: 100%;
   height: auto;
 }
 body header {
@@ -42,9 +43,9 @@ body header {
   align-items: center;
 }
 body header nav {
+  margin: 10px;
   width: 50px;
   height: 40px;
-  margin: 20px;
   border-radius: 5px;
 }
 body header nav img {
@@ -221,12 +222,17 @@ body main .second-part .coord {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 body main .second-part .coord img {
   max-height: 200px;
 }
 body main .second-part .coord ul {
-  padding: 20px;
+  height: auto;
+}
+body main .second-part .coord ul li {
+  font-size: 12px;
+  padding: 10px;
 }
 
 /*tablette*/
@@ -236,6 +242,10 @@ body main .second-part .coord ul {
   }
   body main .first-part form .choices {
     display: flex;
+  }
+  body main .second-part ul li {
+    font-size: 15px !important;
+    font-weight: 700;
   }
 }
 /*pc*/
@@ -256,5 +266,11 @@ body main .second-part .coord ul {
   body main .second-part .c1 .section article {
     display: block;
     width: 500px;
+  }
+  body main .second-part ul {
+    height: auto;
+  }
+  body main .second-part ul li {
+    font-size: 20px !important;
   }
 }/*# sourceMappingURL=style.css.map */
