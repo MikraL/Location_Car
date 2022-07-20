@@ -31,7 +31,7 @@ ul > li {
 /*mixins*/
 body {
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 body header {
