@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Location voiture</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav onclick="menuToggle()" id="nav">
+                <img src="./utils/img/nav.png" alt="">
+                <ul id="ul">
+                    <li>Louer une voiture</li>
+                    <li>Louer un utilitaire</li>
+                    <li>Réserver un chauffeur</li>
+                    <li>Découvrez nos agences</li>
+                    <li>Mon Compte</li>
+                    <li>Contact</li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="first-part">
+                <div class="title">
+                    <h1>Bienvenue à bord</h1>
+                    <h3>Location de voiture 24h/24 et 7j/7</h3>
+                </div>
+                <form method="post">
+                    <div class="choices">
+                        <select>
+                            <option value="" selected disabled>Adresse de départ</option>
+                            <option value="">Le Cloitre</option>
+                            <option value="">Fuveau</option>
+                            <option value="">En bas de la rue</option>
+                        </select>
+                        <input type="text" placeholder="Début de location" onfocus="(this.type='date')"
+                            onblur="(this.type='text')">
+                        <input type="text" placeholder="Fin de location" onfocus="(this.type='date')"
+                            onblur="(this.type='text')">
+                    </div>
+                    <button type="submit">Valider ma recherche</button>
+                </form>
+            </div>
+            <div class="second-part">
+                <div class="parameters">
+                    <div class="result">7 résultats</div>
+
+                    <select name="flter" class="filter">
+                        <option value="">prix croissant</option>
+                        <option value="">prix décroissant</option>
+                    </select>
+                </div>
+                <div class="carouselmain">
+                    <!-- carousel1 -->
+                    <div class="c1">
+                        <div class="carousel" data-carousel>
+                            <div class="carousel-button prev" data-carousel-button="prev">
+                                <div class="arrow-up"></div>
+                            </div>
+
+                            <ul data-slides>
+                                <li class="slide" data-active>
+                                    <img src="./utils/eval_integration-master/vehicule1.png" alt="">
+                                </li>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule2.png" alt="">
+                                </li>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule3.png" alt="">
+                                </li>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule4.png" alt="">
+                                </li>
+                            </ul>
+                            <div class="carousel-button next" data-carousel-button="next">
+                                <div class="arrow-up arrow-up2"></div>
+                            </div>
+                        </div>
+                        <div class="section">
+                        <article>
+                            <h4>Pegeot 208</h4>
+                            Diesel 5 portes, GPS, AutoRadio, Forfait 1000km ( 0.5/km supplémentaire).
+                            <br>
+                            999e - Agence de Paris
+                        </article>
+                        <button class="paid">Reserver et payer</button>
+                    </div>
+                    </div>
+                    <!-- carousel2 -->
+                    <div class="c1">
+                        <div class="carousel" data-carousel>
+                            <div class="carousel-button prev" data-carousel-button="prev">
+                                <div class="arrow-up"></div>
+                            </div>
+
+                            <ul data-slides>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule1.png" alt="">
+                                </li>
+                                <li class="slide" data-active>
+                                    <img src="./utils/eval_integration-master/vehicule2.png" alt="">
+                                </li>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule3.png" alt="">
+                                </li>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule4.png" alt="">
+                                </li>
+                            </ul>
+                            <div class="carousel-button next" data-carousel-button="next">
+                                <div class="arrow-up arrow-up2"></div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <article>
+                                <h4>Audi A1</h4>
+                                Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,55/km supplémentaire).
+                            <br>
+                            1 100€ - Agence de Paris
+                            </article>
+                            <button class="paid">Reserver et payer</button>
+                        </div>
+                    </div>
+                    <!-- carousel3 -->
+                    <div class="c1">
+                        <div class="carousel" data-carousel>
+                            <div class="carousel-button prev" data-carousel-button="prev">
+                                <div class="arrow-up"></div>
+                            </div>
+
+                            <ul data-slides>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule1.png" alt="">
+                                </li>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule2.png" alt="">
+                                </li>
+                                <li class="slide" data-active>
+                                    <img src="./utils/eval_integration-master/vehicule3.png" alt="">
+                                </li>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule4.png" alt="">
+                                </li>
+                            </ul>
+                            <div class="carousel-button next" data-carousel-button="next">
+                                <div class="arrow-up arrow-up2"></div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <article>
+                                <h4>Ford Focus</h4>
+                                Diesel 5 portes, GPS, AutoRadio, Forfait 1000km ( 0.5/km supplémentaire).
+                                <br>
+                                1 1150€ - Agence de Paris
+                            </article>
+                            <button class="paid">Reserver et payer</button>
+                        </div>
+                    </div>
+                    <!-- carousel4 -->
+                    <div class="c1">
+                        <div class="carousel" data-carousel>
+                            <div class="carousel-button prev" data-carousel-button="prev">
+                                <div class="arrow-up"></div>
+                            </div>
+
+                            <ul data-slides>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule1.png" alt="">
+                                </li>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule2.png" alt="">
+                                </li>
+                                <li class="slide">
+                                    <img src="./utils/eval_integration-master/vehicule3.png" alt="">
+                                </li>
+                                <li class="slide" data-active>
+                                    <img src="./utils/eval_integration-master/vehicule4.png" alt="">
+                                </li>
+                            </ul>
+                            <div class="carousel-button next" data-carousel-button="next">
+                                <div class="arrow-up arrow-up2"></div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <article>
+                                <h4>Oppel Mokka</h4>
+                                Diesel 5 portes, GPS, AutoRadio, Forfait 1000km ( 0.5/km supplémentaire).
+                                <br>
+                                999e - Agence de Paris
+                            </article>
+                            <button class="paid">Reserver et payer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="coord">
+                    <img src="./utils/eval_integration-master/agence.jpg" alt="">
+                    <ul>
+                        <li>Notre Agence de Paris</li>
+                        <li>300 boulevard de vaugigard, 75015, Paris</li>
+                        <li>Ouvert 7j/7</li>
+                        <li>09.31.14.24.12</li>
+                        <li>contact@vtc.com</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <script src="./js/monjs.js"></script>
+    </body>
+
+</html>
